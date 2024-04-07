@@ -7,27 +7,30 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-
-const ServiceCard = ({ index, title, icon}) => {
+const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
-          <div
-            options = {{
-              max:45,
-              scale: 1,
-              speed:450
-            }}  
-            className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col "
-          >
-            <img  src={icon} alt={title} className="w-16 h-16 object-contain"/>
-            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
-          </div>
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col "
+        >
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
       </motion.div>
-      </Tilt>
-  )
-}
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
@@ -37,19 +40,25 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]">
-        I am a software engineer with experience in developing web applications and mobile apps using various programming languages such I am a software engineer with experience in developing web applications using various languages and frameworks such as I am a highly motivated and detail-oriented software engineer with an extensive background in computer science. My expertise lies in developing high.
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]"
+      >
+        I am a driven and versatile individual with a deep passion for
+        technology and a knack for creative problem-solving. With a background
+        in web development and a strong foundation in programming languages, I
+        thrive on pushing the boundaries of innovation. My journey in the tech
+        industry has been fueled by a relentless pursuit of learning and a
+        commitment to excellence. I am dedicated to leveraging my skills to
+        craft meaningful solutions that make a positive impact in the digital
+        world.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((Service, index) => (
-          <ServiceCard key={services.title} index={index} {...Service} /> 
+          <ServiceCard key={services.title} index={index} {...Service} />
         ))}
-
       </div>
-
-
-
     </>
   );
 };

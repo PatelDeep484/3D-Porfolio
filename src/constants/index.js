@@ -1,7 +1,10 @@
 import {
     mobile,
     backend,
-    creator,
+    android,
+    Python,
+  //  creator,
+    NextJs,
     web,
     javascript,
     typescript,
@@ -49,13 +52,13 @@ import {
       title: "React Native Developer",
       icon: mobile,
     },
+    // {
+    //   title: "Backend Developer",
+    //   icon: backend,
+    // },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
+      title: "Android Developer",
+      icon: android,
     },
   ];
   
@@ -104,14 +107,23 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
     {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "Python",
+      icon:  Python,
+    },
+    {
+      name: "Next JS",
+      icon: NextJs,
+    }
+
   ];
   
   const experiences = [
