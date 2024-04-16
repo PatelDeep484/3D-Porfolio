@@ -23,6 +23,7 @@ import {
   docker,
   meta,
   starbucks,
+  seneca,
   tesla,
   shopify,
   carrent,
@@ -184,6 +185,20 @@ const experiences = [
   },
 ];
 
+const educations = [
+  {
+    title: "Computer Programming and Analysis",
+    company_name: "Seneca Polytechnic ",
+    icon: seneca,
+    iconBg: "#383E56",
+    date: "August 2023 - Present",
+    points: [
+      "Provide effective leadership and supervision to event staff, ensuring flawless execution of tasks and responsibilities.",
+      "Coordinate all aspects of event logistics, from setup to breakdown, while maintaining seamless communication with vendors and clients.",
+      "Deliver exceptional customer service by promptly addressing client needs and resolving any issues to guarantee satisfaction.",
+    ],
+  },
+];
 const testimonials = [
   {
     testimonial:
@@ -290,4 +305,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  educations,
+};

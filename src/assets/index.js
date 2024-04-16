@@ -37,6 +37,7 @@ import staffyourevent from "./staffyourevents.png";
 import Aramark from "./aramark.jpg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import seneca from "./seneca.png";
 
 export {
   logo,
@@ -44,6 +45,7 @@ export {
   creator,
   mobile,
   web,
+  seneca,
   studentandcourse,
   grabsmartly,
   Aramark,
